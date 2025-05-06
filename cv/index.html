@@ -11,15 +11,19 @@
             margin: 20px;
             padding: 20px;
             max-width: 850px;
-            margin: auto;
+            margin-left: auto;
+            margin-right: auto;
             text-align: left;
         }
+
         h1, h2, h3 {
             text-align: center;
         }
+
         .page {
             margin-bottom: 20px;
         }
+
         .container {
             display: flex;
             justify-content: space-between;
@@ -27,86 +31,145 @@
             width: 20%;
             margin: 0 auto;
         }
+
         .item {
             display: flex;
             align-items: center;
         }
+
         .item img {
             margin-right: 10px;
         }
+
         a {
             text-decoration: none;
             color: blue;
+            word-break: break-word;
         }
+
         a:hover {
             text-decoration: underline;
         }
+
         .back-link {
             position: absolute;
             top: 20px;
             left: 20px;
             color: black;
         }
+
         .bio {
             text-align: center;
+        }
+        li {
+                margin-bottom: 6px;
+            }
+
+        /* === MOBILE STYLES === */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+                margin: 10px;
+            }
+
+            .container {
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .back-link {
+                position: static;
+                display: block;
+                margin-bottom: 15px;
+                text-align: left;
+            }
+
+            h1, h2, h3 {
+                font-size: 1.3em;
+            }
+
+            p, li {
+                font-size: 0.95em;
+                line-height: 1.5em;
+            }
+
+            ul {
+                padding-left: 20px;
+            }
+
+            .bio {
+                word-wrap: break-word;
+                font-size: 0.95em;
+            }
+            li {
+                margin-bottom: 6px;
+            }
         }
     </style>
 </head>
 <body>
     <a href="../" class="back-link">← Back to Homepage</a>
     <h1>Diego Yaldo</h1>
-    <p class="bio" >Gibraltar | <a href="https://www.linkedin.com/in/diegoyaldo" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/diegoyaldo</a> | <a href="https://diegoyaldo.github.io" target="_blank" rel="noopener noreferrer">diegoyaldo.github.io</a></p>
-    
+    <p class="bio">Gibraltar | <a href="https://www.linkedin.com/in/diegoyaldo" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/diegoyaldo</a> | <a href="https://diegoyaldo.github.io" target="_blank" rel="noopener noreferrer">diegoyaldo.github.io</a></p>
+
     <h2>PROFESSIONAL SUMMARY</h2>
     <p>Cybersecurity enthusiast with exceptional information technology, pharmaceutical, aviation experience. Completed the Cybersecurity Professional Certificate through the University of Central Florida. Cultivating skills in Microsoft Security, Linux Essentials, Python, Wireshark, Splunk, and more. Hard working, punctual, professional, comfortable with irregular and traditional schedules, strong customer service skills with a competitive sports mentality. A dual US and UK Citizen, raised in the UK, Spain, and the USA.</p>
-    
+
     <h2>EDUCATION</h2>
     <p><strong>University of Central Florida | Orlando, FL | Professional Cyber Defense Certificate Aug 2022</strong><br>
     Coursework: Computer Networking, Microsoft Security, Cloud Security, Linux Security, Network Security, Cyber Infrastructure & Technology, DFIR(Digital Forensics and Incident Response), Ethical Hacking, Game Theory, Python</p>
-    
+
     <p><strong>University of Gibraltar | Gibraltar | Bsc (Hons) Computing and Entrepreneurship Sep 2023 - Present</strong><br>
     Coursework: Software Engineering, Web Programming, Business Economics, Databases, Networks, Business Law, HR Management, Innovative Studies, Business Ethics and Corporate Governance, Cybersecurity, Cloud Computing</p>
-    
+
     <h2>TECHNICAL SKILLS</h2>
     <p><strong>Certifications:</strong> MITRE ATT&CK® Security Operations Center Assessment Certification<br>
     <strong>Operating Systems:</strong> Windows Client, Ubuntu, Kali, CentOS, MacOS<br>
     <strong>Programming Languages:</strong> JavaScript, HTML, CSS, Python, PHP, MySQL<br>
     <strong>Languages:</strong> English (Fluent), Spanish (Low-Intermediate Level), Assyrian (Conversational), Arabic (Reading)</p>
-    
+
     <h2>PROJECTS</h2>
     <p><strong>Secure Network | University of Central Florida</strong></p>
     <ul>
         <li>Created a secure network by implementing firewalls, ACLs, IPS, and IDS to analyze network traffic and mitigate future security breaches</li>
         <li>Configured security controls such as honeypots, data loss prevention, mail security, and Splunk SIEM to improve threat detection and optimize incident response time</li>
     </ul>
-    
+
     <p><strong>Python Scripting | University of Central Florida</strong></p>
     <ul>
         <li>Developed Python script and implemented ARP spoof detector to exploit vulnerabilities and determine if machine is under attack</li>
     </ul>
-    
+
     <h2>WORK EXPERIENCE</h2>
+    <p><strong>MetaWin | Gibraltar <i>Service Desk Technician</i> Aug 2024 - Present</strong></p>
+    <ul>
+        <li>Responsible for IT onboarding and offboarding of employees, as well as general IT infrastructure maintenance</li>
+        <li>Worked with Google Admin, GPCW, Meraki, Microsoft 365 Admin Center, Zendesk, Adobe Admin Console, Asana, Confluence, JumpCloud and Slack Workspace Admin</li>
+        <li>Managed company device asset and software licensing reporting and decomissioning</li>
+    </ul>
+
     <p><strong>Gibtelecom | Gibraltar <i>Student Placement Technical Support Asst.</i> July 2024 - Aug 2024</strong></p>
     <ul>
         <li>Assisted IMS Core and Voice services, used ETK, Confluence, JIRA and Anritsu eoSearch</li>
         <li>Created Python scripts to automate Ericsson Winfiol routing log parsing</li>
         <li>Traveled to Portugal with the Mobile team to test newly created routing for Lobster SIMs</li>
     </ul>
-    
+
     <p><strong>Transaction Data System | Orlando <i>Software Support Technician</i> Oct 2022 - Aug 2023</strong></p>
     <ul>
         <li>Responsible for managing RX30 CentOS servers and systems</li>
         <li>Provide network, software, database and hardware support</li>
         <li>Frequently perform database maintenance and undergo Postgres troubleshooting</li>
     </ul>
-    
+
     <p><strong>Global Security | Orlando Int’l Airport <i>Aviation Security Officer</i> May 2022 - Aug 2022</strong></p>
     <ul>
         <li>Responsible for security and auditing at MCO for international flights</li>
         <li>Lufthansa, LATAM, Virgin Atlantic and Emirates contracts</li>
         <li>Successfully completed and obtained a Class D Security License, FL Dept of Agriculture</li>
     </ul>
-    
+
     <h2>EXTRACURRICULAR ACTIVITIES</h2>
     <p><strong>Ibex Buccaneers RFC | Gibraltar</strong></p>
     <ul>
@@ -129,10 +192,10 @@
     <h2>REFERENCES</h2>
     <p>Laura Innis at Deep Instinct, Talent Acquisition Manager, Cyber and AI<br>
     <a href="https://www.linkedin.com/in/laura-innis-headhunter/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/laura-innis-headhunter/</a></p>
-    
+
     <p>Doug Lakin at Booz Allen, Cyber Lead Technologist, SME<br>
     <a href="https://www.linkedin.com/in/douglakin/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/douglakin/</a></p>
-    
+
     <p>Sonia Stanton at Pro MGA Global Solutions, Risk and Compliance Manager, ex-GFSC<br>
     <a href="https://www.linkedin.com/in/sonia-stanton-acii-a4867160/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/sonia-stanton-acii-a4867160/</a></p>
 </body>
